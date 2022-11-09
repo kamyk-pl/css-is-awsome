@@ -1,0 +1,130 @@
+:root {
+    --cl-it-magenta: rgb(156, 23, 129);
+    --cl-it-yellow-50: #FFF280;
+    --cl-it-mint-25: hwb(183 75% 7%);
+        
+    --cl-temp: rgb(231, 197, 224);
+
+    --cl-black : black;
+    --cl-white: white;
+
+    --font-size-100: 0.3rem;
+    --font-size-300: 0.9rem;
+    --font-size-400: 1rem; /*normal*/
+    --font-size-500: 1.25rem; 
+    --font-size-600: 1.5rem;
+    --font-size-700: 1.75rem; /*biggest*/
+    --font-size-800: 2rem; /*huge*/
+
+  }
+
+
+.frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    background-color: var(--seconday-bg-color);
+    color: var(--primary-color);
+
+    padding: 0 20px;
+    height: 25px;
+
+    font-family: Inter, sans-serif;
+}
+
+.frame :is(h1, h3){
+    font-size:var(--font-size-300);
+    text-align: center;
+}
+
+.frame img{    /* filter: invert(1); */
+    width: 100px;
+}
+
+.frame.space{
+    justify-content: space-between;
+}
+ .decoration-title{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: -99;
+    top:300px;
+    left:300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px; 
+    row-gap: 0;
+}
+
+.decoration{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: -99;
+ 
+    display: grid;
+    grid-template-columns: 100px 100px; 
+    row-gap: 0;
+    scale: 0.75;
+}
+
+ .box{
+    width: 100px;
+    height: 100px;
+}
+
+.mint{
+    background-color: var(--cl-it-mint-25);
+}
+.yellow{
+    background-color: var(--cl-it-yellow-50);
+}
+.magenta{
+    background-color: var(--cl-it-magenta);
+}
+.black{
+    background-color: var(--cl-black);
+}
+.white{
+    background-color: var(--cl-white);
+    /* outline: 1px solid var(--cl-black); */
+    /* outline-offset: -1px; */
+}
+
+.left-top{
+    position: absolute;
+    top: 0px;
+    left: -18%;
+}
+
+
+.right-top{
+    position: absolute;
+    top: 0px;
+    left: 82%;
+}
+.left-bottom{
+    position: absolute;
+    top: 55%;
+    left: -18%;
+}
+
+
+.right-bottom{
+    position: absolute;
+    top: 55%;
+    left: 82%;
+}
+ 
+
+.section-title{
+    margin-top: 125px;
+    padding: 3em;
+    background-color: var(--cl-black) ;
+
+}
+.section-title :is(h1,  h7){
+    color: var(--cl-white);
+}

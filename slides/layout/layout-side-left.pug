@@ -1,0 +1,17 @@
+- var transition= "slide"
+block vars
+- var pageId = title+ "-"+  counter++
+section(id= pageId, data-transition=transition)
+  .side-left
+    h2.header
+       block title
+    div.content
+      block content
+  .decoration 
+        .box
+        .box
+        .box
+        .box
+
+
+

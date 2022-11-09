@@ -1,0 +1,54 @@
+extends layout/layout-side-left.pug 
+
+block vars
+  - var title = 'functions-css'
+
+block title
+        
+        | Function - Example
+
+
+block content
+        div.flex(style="height:100%")
+          h7
+            pre(style="width:100%")
+              code(data-trim data-noescape style="max-width:1000px; max-height:800px;translate: 0 -100px;")
+                |.animation div{
+                |  animation-duration: 2s;
+                |  animation-iteration-count: infinite;
+                |}
+                |.animation #it:hover{
+                |  animation-name: rotate;
+                |}
+                |@keyframes rotate {
+                |  0%   { rotate: 0deg; }
+                |  50%  { rotate: 90deg }
+                |  100% { rotate: 45deg }
+                |}
+                |.animation #er:hover{
+                |  animation-name: scale;
+                |}
+                |@keyframes scale {
+                |  0%   { scale: 1; }
+                |  50%  { scale: 2 }
+                |  100% { scale: 0.5 }
+                |}
+                |.animation #at:active{
+                |  animation-name: translate;
+                |}
+                |@keyframes translate {
+                |  0%   { translate: 0 0; }
+                |  50%  { translate: 0 150px }
+                |  100% { translate: 100px 150px }
+                |}
+                |.animation #ec:active{
+                |  animation-name: skew;
+                |}
+                |@keyframes skew {
+                |  0%   { transform: skew(0deg, 0deg ) }
+                |  50%   { transform: skew(30deg, 0deg ) }
+                |  100%   { transform: skew(30deg, 20deg ) }
+                | }
+   
+
+       

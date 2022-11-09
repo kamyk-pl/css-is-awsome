@@ -1,0 +1,39 @@
+extends layout/layout.pug 
+
+block vars
+  - var title = 'function example 7'
+
+block title
+        
+        | +, ~, ... Example
+
+block content
+
+        div.flex(style="height:100%")
+          h7
+            pre(style="width:100%")
+              code(data-trim data-noescape style="max-width:1000px; max-height:800px;")
+              | div[class="bad-news"]{
+              |  background-color: blue;
+              | }
+            pre(style="width:100%")
+              code(data-trim data-noescape style="max-width:1000px; max-height:800px;")
+                 |     &ltdiv class="example-container"&gt
+                 |       &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+                 |       &ltdiv&gtbox2
+                 |         &ltp&gttext&lt/p&gt
+                 |       &lt/div&gt
+                 |       &ltp&gttext&lt/p&gt
+                 |       &ltdiv class="news"&gt box3&lt/div&gt
+                 |       &ltdiv&gt&lt/div&gt
+                 |       &ltdiv class="bad-news"&gt box5&lt/div&gt
+                 |     &lt/div&gt  
+
+        .div.example-container.fragment(style="font-size:20px;margin-left:115px").attr-value
+          div(data-important).newsletter box1
+          div box2
+            p text
+          p text    
+          div.news box3
+          div 
+          div(data-very-important).bad-news box5

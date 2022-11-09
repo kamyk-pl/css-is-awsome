@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>iteratec  _BUILD’22    </title>
+    <meta charset="utf-8">
+    <meta name="author" content=" ">
+    <meta name="description" content=" AR  ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link href="reveal/reveal.css" rel="stylesheet">
+    <link href="reveal/white.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/reveal-adj.css" rel="stylesheet">
+    <link href="css/utils.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/examples.css" rel="stylesheet"><!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/atom-light.css" id="highlight-theme">
+    <script src="reveal/plugin/highlight/highlight.js"></script>
+  </head>
+</html>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="title-0" data-transition="fade-out fade-out">
+        <h2 class="header"></h2>
+        <div>
+          <div class="flex">          
+            <h2 class="move-title">Variables <br>functions<br>and more <br>are <br>waiting for<br>you in your<br>CSS<br>stylesheet   </h2>
+          </div>
+          <div class="decoration-title left-top"> 
+            <div class="box black"></div>
+            <div class="box magenta"></div>
+            <div class="box yellow"></div>
+            <div class="box magenta"></div>
+            <div class="box mint"></div>
+            <div class="box white"></div>
+            <div class="box yellow"></div>
+            <div class="box white"></div>
+            <div class="box white"></div>
+          </div>
+          <div class="decoration-title left-bottom">
+            <div class="box yellow"></div>
+            <div class="box white"></div>
+            <div class="box white"></div>
+            <div class="box magenta"></div>
+            <div class="box mint"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box magenta"></div>
+            <div class="box yellow"></div>
+          </div>
+          <div class="decoration-title right-top"> 
+            <div class="box yellow"></div>
+            <div class="box magenta"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box mint"></div>
+            <div class="box magenta"></div>
+            <div class="box white"></div>
+            <div class="box white"></div>
+            <div class="box yellow"></div>
+          </div>
+          <div class="decoration-title right-bottom"> 
+            <div class="box white"></div>
+            <div class="box white"></div>
+            <div class="box yellow"></div>
+            <div class="box white"></div>
+            <div class="box mint"></div>
+            <div class="box magenta"></div>
+            <div class="box yellow"></div>
+            <div class="box magenta"></div>
+            <div class="box black"></div>
+          </div>
+        </div>
+      </section>
+      <section id="title-1" data-transition="none slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="flex" style="position: relative;">       
+            <h2 class="moved-title">
+               Variables <br>functions<br>and more <br>are <br>waiting for<br>you in your<br>CSS<br>stylesheet   </h2>
+            <div class="fragment" style="display: flex; align-items: center;">
+                           a.k.a<img class="fragment" src="img/css-is-awesome.png"></div>
+          </div>
+          <p class="fragment disclaimer" style="margin-top:175px">
+                   _BUILD’22'<br>      Paweł Kamiński</p>
+          <div class="decoration-title left-top"> 
+            <div class="box black"></div>
+            <div class="box magenta"></div>
+            <div class="box yellow"></div>
+            <div class="box magenta"></div>
+            <div class="box mint"></div>
+            <div class="box white"></div>
+            <div class="box yellow"></div>
+            <div class="box white"></div>
+            <div class="box white"></div>
+          </div>
+          <div class="decoration-title left-bottom">
+            <div class="box yellow"></div>
+            <div class="box white"></div>
+            <div class="box white"></div>
+            <div class="box magenta"></div>
+            <div class="box mint"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box magenta"></div>
+            <div class="box yellow"></div>
+          </div>
+          <div class="decoration-title right-top"> 
+            <div class="box yellow"></div>
+            <div class="box magenta"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box mint"></div>
+            <div class="box magenta"></div>
+            <div class="box white"></div>
+            <div class="box white"></div>
+            <div class="box yellow"></div>
+          </div>
+          <div class="decoration-title right-bottom"> 
+            <div class="box white"></div>
+            <div class="box white"></div>
+            <div class="box yellow"></div>
+            <div class="box white"></div>
+            <div class="box mint"></div>
+            <div class="box magenta"></div>
+            <div class="box yellow"></div>
+            <div class="box magenta"></div>
+            <div class="box black"></div>
+          </div>
+        </div>
+      </section>
+      <section id="agenda-no-2" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Agenda</h2>
+          <div class="content">
+            <ul>
+              <li class="fragment hideme">CSS Basics</li>
+              <li class="fragment" style="text-decoration: line-through;">CSS Basics</li>
+              <li class="fragment hideme">Sass, Less, Stylus (CSS Preprocessors)</li>
+              <li class="fragment" style="text-decoration: line-through;">Sass, Less, Stylus (CSS Preprocessors)</li>
+              <li class="fragment hideme">Bootstrap, Materials, Talwind</li>
+              <li class="fragment" style="text-decoration: line-through;">Bootstrap, Materials, Talwind</li>
+              <li class="fragment hideme">CSS tooling</li>
+              <li class="fragment" style="text-decoration: line-through;">CSS tooling</li>
+              <li class="fragment hideme">CSS layouts (grid/flex)</li>
+              <li class="fragment" style="text-decoration: line-through;">CSS layouts (grid/flex)</li>
+              <li class="fragment hideme">CSS units</li>
+              <li class="fragment" style="text-decoration: line-through;">CSS units</li>
+              <li class="fragment hideme">CSS animations</li>
+              <li class="fragment" style="text-decoration: line-through;">CSS animations</li>
+              <li class="fragment hideme">UX/UI</li>
+              <li class="fragment" style="text-decoration: line-through;">UX/UI</li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="agenda-3" data-transition="slide">
+        <h2 class="header">Agenda</h2>
+        <div><img src="img/colors.jpeg" alt="colors" style="margin: 0 auto"></div>
+      </section>
+      <section id="agenda-4" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Agenda</h2>
+          <div class="content">
+            <ul>
+              <li class="fragment">
+                 Variables / Custom properties</li>
+              <li class="fragment">
+                 Functions</li>
+              <p class="fragment">
+                 More:   </p>
+              <li class="fragment">
+                 Selectors</li>
+              <li class="fragment">
+                 Colors   </li>
+              <li class="fragment">
+                 Media Queries</li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="lets-meet-5" data-transition="slide">
+        <h2 class="header"> Introduction round</h2>
+        <div>
+          <div class="flex"> <img class="fragment" src="img/lets-introduce.gif" alt="lets-introduce" style="max-width: 800px;">
+            <ul class="square biggest">
+              <li class="fragment"> iteratec Location <br><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvMzFcLzIyNDRcL2FmMzg5MzY3ZDRmN2EyNTVlMWUxZWI2ZGE5MjJkNjg3LTE2MjEzNTczMDAuc3ZnIn0:iteratec:DBxLZ2Enk-_DeZVmWNnLUlQTcer4AXstC3JZK_KadVA?width=75" width="75px" height="75px"><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvZDRcLzIyNDBcL2EyYjQzZDU4ODgxNjM3MTA2YWI2ZGFiMDYxZWQ1NTVkLTE2MjEzNTczMDAuc3ZnIn0:iteratec:MqE3MxtN7Z_RXCCHMgVQFuAqNsh5zjukaMFUJJpWDAc?width=75" width="75px" height="75px"><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvM2RcLzIyMzZcLzgxYzQ4OWU5MWU4MmY1OTZjNmZlYWFmODVlYWNhZGY2LTE2MjEzNTczMDAuc3ZnIn0:iteratec:E5V05FWCh0ArLzBgH-0fxf0rF7kWX6UXNrXcSlmtW_4?width=75" width="75px" height="75px"><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvNjVcLzIyMzRcLzBhMTI1OTlkMzU1NmUyY2M3MTEyMWIxODk5ZTQzZTRhLTE2MjEzNTczMDAuc3ZnIn0:iteratec:hCjwjEVyO5_rY5D6Axiu15PTlF6s8H44yODQ-UmBE9g?width=75" width="75px" height="75px"><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvM2VcLzIyMzJcL2U5MmY2Yjg4NWI4NDliMGIyN2Y1YjQwOTBkYjAwNDZlLTE2MjEzNTczMDAuc3ZnIn0:iteratec:qJrURI_Q_8tb7dRBnX6a4OkX--_LU_7Kz2Xg9vFmoNg?width=75" width="75px" height="75px"><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvMDFcLzIyMjZcLzg3NTM2YTM3MGNmNTdhM2ZiMmVlNzUwMjMxY2Y3M2Q0LTE2MjEzNTczMDAuc3ZnIn0:iteratec:GV1xhr4Wh2T8P0TJkiUS5sYyXXYLE54itEfGA9-6uHc?width=75" width="75px" height="75px"><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvNGFcLzIyMjhcLzhiMjY3ZmY2ZDU2NTc1M2VhMmExZTMzYWRlNTE3MGI5LTE2MjEzNTczMDAuc3ZnIn0:iteratec:Kml5dC2bG2MC6SSz6qbNE_p_Fdcv-pk-FOIzNzhHfIk?width=75" width="75px" height="75px"></li>
+              <li class="fragment"> Baisc Programing Language <img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvZjlcLzEzMjFcLzkyMjEzMTRhODE1YjNiMDk0Nzc1MDczZjZjMzc4YmEzLTE2MDA0MTk2ODIuc3ZnIn0:iteratec:H6m8TwRAolKU4B3eCl9vXeMJ8wnyWwV102FAVjTxYMI?width=30" width="30px" height="30px"></li>
+              <li class="fragment"> Feelings for CSS: 
+                <ul class="fragment no-bullet biggest">
+                  <li class="hate">Hate</li>
+                  <li class="avoid">Avoid when possible</li>
+                  <li class="neutral">Neutral</li>
+                  <li class="volonteer">I'm always a volonteer</li>
+                  <li class="love">Love</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="is-css-programming-language-6" data-transition="slide fade-out">
+        <h2 class="header"> Is CSS Programming Languge?</h2>
+        <div><img src="img/programming-languages.png" alt="programming lanugages" style="max-width: 1200px; margin-top: 150px"></div>
+      </section>
+      <section id="is-css-programming-language-7" data-transition="fade-in slide">
+        <h2 class="header"> Is CSS Programming Languge?</h2>
+        <div><img src="img/programming-languages.png" alt="programming lanugages" style="max-width: 1200px; margin-top: 150px">
+          <p class="move">  CSS</p>
+          <script>
+            document.querySelector('.move').classList.add('move-css')
+            
+            
+          </script>
+        </div>
+      </section>
+      <section id="browser-wars-8" data-transition="slide">
+        <h2 class="header">Browser Wars</h2>
+        <div><img src="img/browser-wars.png" alt="browser logo" style="max-height: 800px;max-width: 800px;">
+          <p class="disclaimer"><a href="    https://www.seekpng.com/ima/u2q8a9w7o0q8w7e6/" target="_blank">   www.seekpng.com/ima/u2q8a9w7o0q8w7e6</a></p>
+        </div>
+      </section>
+      <section id="browswer-peace-9" data-transition="slide">
+        <h2 class="header">Browser peace</h2>
+        <div>
+          <ul class="flex no-bullet">
+            <li class="fragment"> <img src="img/fast1.jpeg" alt="browser logo" style="max-height: 500px;max-width: 800px;">
+              <p class="disclaimer"><a href="https://www.researchgate.net/figure/Figure-2-Evolution-of-Physical-Inactivity-Source_fig2_316968020" target="_blank"></a> https://www.pinterest.com/pin/860187597567286705/</p>
+            </li>
+            <li class="fragment"> <img src="img/fast2.jpeg" alt="browser logo" style="max-height: 500px;max-width: 800px;">
+              <p class="disclaimer"><a href="https://www.researchgate.net/figure/Figure-2-Evolution-of-Physical-Inactivity-Source_fig2_316968020" target="_blank"></a> https://www.pinterest.com/pin/860187597567376336/</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="disclaimer-10" data-transition="slide">
+        <h2 class="header"></h2>
+        <div><img src="img/disclaimer.jpeg" style="border:0;translate: 0px 150px"></div>
+      </section>
+      <section id="disclaimer-11" data-transition="slide none">
+        <h2 class="header">syntax</h2>
+        <div>
+          <pre><code css data-trim>&lt;selector1&gt;, &lt;selector2&gt; {
+  &lt;property1&gt; : &lt;value1&gt;;
+  &lt;property2&gt; : &lt;value2&gt;;
+  &lt;property3&gt; : &lt;value3&gt;
+}
+&nbsp;
+&lt;selector1&gt; {
+  &lt;property4&gt; : &lt;value4&gt;
+}
+&nbsp;
+/* Css comment */</code></pre>
+        </div>
+      </section>
+      <section id="disclaimer-12" data-transition="none">
+        <h2 class="header">syntax</h2>
+        <div>
+          <pre><code css data-trim>p, div {
+  background: red;
+  color: blue
+}
+&nbsp;
+.warn {
+  font-style: italic
+}
+&nbsp;
+#title {
+  font-weight: bold
+}
+&nbsp;
+/* Css comment */</code></pre>
+        </div>
+      </section>
+      <section id="variables-title-13" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>Variables</h1>
+            <h7>
+              a.k.a
+              Custom Properties
+            </h7>
+          </div>
+        </div>
+      </section>
+      <section id="variables-14" data-transition="slide">
+        <h2 class="header">Variables</h2>
+        <div>
+          <h7 class="fragment">Syntax 
+            <pre><code data-trim data-noescape>
+element {
+  --main-bg-color: brown;
+}</code></pre>
+          </h7>
+          <h7 class="fragment">Global variables 
+            <pre><code data-trim data-noescape>
+:root {
+  --main-bg-color: brown;
+}</code></pre>
+          </h7>
+          <h7 class="fragment">Usage
+            <pre><code data-trim data-noescape>
+h1 {
+  color: var(--main-bg-color);
+}</code></pre>
+          </h7>
+        </div>
+      </section>
+      <section id="variables-15" data-transition="slide">
+        <h2 class="header">Variables - Example</h2>
+        <div><a href="https://codepen.io/kevinpowell/pen/OOKywZ" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="functions-16" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>Functions</h1>
+          </div>
+        </div>
+      </section>
+      <section id="functions-17" data-transition="slide">
+        <h2 class="header">Function </h2>
+        <div>
+          <div class="flex"> 
+            <div class="fragment magenta" style="padding: 2rem">name </div>
+            <div class="fragment mint" style="padding: 2rem">arguments </div>
+            <div class="fragment yellow" style="padding: 2rem">results  </div>
+          </div>
+        </div>
+      </section>
+      <section id="functions-18" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <ul>
+              <li class="fragment">transform:  translate(), rotate()</li>
+              <li class="fragment">colors: rgb(255, 255, 255), filter, gradients</li>
+              <li class="fragment">math: calc(), min(), max(), clamp(), sin()...</li>
+              <li class="fragment">content: url(), path()</li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="function example-19" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>
+              Functions 
+              Transform
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section id="functions-code-20" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <h7>
+                <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv&gt id="it"&gt&lt/div&gt
+      &ltdiv&gt id="er"&gt&lt/div&gt
+      &ltdiv&gt id="at"&gt&lt/div&gt
+      &ltdiv&gt id="ec"&gt&lt/div&gt
+    &lt/div&gt</code></pre>
+              </h7>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-css-21" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <h7>
+                <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">  .example-container{
+    display: flex;
+    border: 1px solid black;
+    gap: 5px;
+  }
+  .example-container div{
+    width: 100px;
+    height: 100px;
+  }
+  #it{
+    background-image: url(/img/it.png);
+  }
+  #er{
+    background-image: url(/img/er.png);
+  }
+  #at{
+    background-image: url(/img/at.png);
+  }
+  #ec{
+    background-image: url(/img/ec.png);
+  }
+</code></pre>
+              </h7>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-22" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <div class="example-container">
+                <div id="it"> </div>
+                <div id="er"> </div>
+                <div id="at"> </div>
+                <div id="ec"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-css-23" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <h7>
+                <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">.rotate{
+  rotate: 45deg;
+}
+.scale{
+  scale: 0.5;
+}
+.translate{
+  translate: 100px 150px;
+}
+.skew{
+  transform: skew(30deg, 20deg)
+}
+</code></pre>
+              </h7>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-code2-24" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <h7>
+                <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv&gt id="it" class="rotate"&gt&lt/div&gt
+      &ltdiv&gt id="er" class="scale"&gt&lt/div&gt
+      &ltdiv&gt id="at" class="translate"&gt&lt/div&gt
+      &ltdiv&gt id="ec" class="skew"&gt&lt/div&gt
+    &lt/div&gt</code></pre>
+              </h7>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-25" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <div class="example-container">
+                <div class="rotate" id="it"> </div>
+                <div class="scale" id="er"></div>
+                <div class="translate" id="at"></div>
+                <div class="skew" id="ec"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-css-26" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <h7>
+                <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;translate: 0 -100px;">.animation div{
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+.animation #it:hover{
+ animation-name: rotate;
+}
+@keyframes rotate {
+ 0%   { rotate: 0deg; }
+ 50%  { rotate: 90deg }
+ 100% { rotate: 45deg }
+}
+.animation #er:hover{
+ animation-name: scale;
+}
+@keyframes scale {
+ 0%   { scale: 1; }
+ 50%  { scale: 2 }
+ 100% { scale: 0.5 }
+}
+.animation #at:active{
+ animation-name: translate;
+}
+@keyframes translate {
+ 0%   { translate: 0 0; }
+ 50%  { translate: 0 150px }
+ 100% { translate: 100px 150px }
+}
+.animation #ec:active{
+ animation-name: skew;
+}
+@keyframes skew {
+ 0%   { transform: skew(0deg, 0deg ) }
+ 50%   { transform: skew(30deg, 0deg ) }
+ 100%   { transform: skew(30deg, 20deg ) }
+}</code></pre>
+              </h7>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-code2-27" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <h7>
+                <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container animation"&gt
+      &ltdiv&gt id="it"&gt&lt/div&gt
+      &ltdiv&gt id="er"&gt&lt/div&gt
+      &ltdiv&gt id="at"&gt&lt/div&gt
+      &ltdiv&gt id="ec"&gt&lt/div&gt
+    &lt/div&gt</code></pre>
+              </h7>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-28" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="height:100%">
+              <div class="example-container animation">
+                <div id="it"> </div>
+                <div id="er"></div>
+                <div id="at"></div>
+                <div id="ec"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="function example cube-29" data-transition="slide">
+        <h2 class="header">Cube - Example</h2>
+        <div><a href="https://codepen.io/desandro/pen/KRWjzm" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="function image example-30" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>
+              Functions 
+              Image/Colors
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section id="function example gradient-31" data-transition="slide">
+        <h2 class="header">CSS Gradient - Example</h2>
+        <div><a href="https://cssgradient.io/" target="_blank">cssgradient.io</a></div>
+      </section>
+      <section id="functions-32" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="width:800px"><img src="img/fast2.jpeg" alt="browser logo" style="max-height: 500px;max-width: 800px;"></div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-33" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="gap:100px">
+              <pre style="width:400px"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">.invert{
+    filter: invert();
+}</code></pre><img class="fragment invert" src="img/fast2.jpeg" alt="browser logo" style="max-height: 500px;max-width: 800px;">
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-34" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="gap:100px">
+              <pre style="width:400px"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">.greyscale{
+    filter: grayscale(100%);
+}</code></pre><img class="fragment greyscale" src="img/fast2.jpeg" alt="browser logo" style="max-height: 500px;max-width: 800px;">
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-35" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="gap:100px">
+              <pre style="width:400px"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">.blur{
+    filter: blur(10px);
+}</code></pre><img class="fragment blur" src="img/fast2.jpeg" alt="browser logo" style="max-height: 500px;max-width: 800px;">
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="functions-36" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Function - Example</h2>
+          <div class="content">
+            <div class="flex" style="gap:100px">
+              <pre style="width:400px"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">.combo{
+   filter:  drop-shadow(16px 16px 20px blue) sepia(60%);
+}</code></pre><img class="fragment combo" src="img/fast2.jpeg" alt="browser logo" style="max-height: 500px;max-width: 800px;">
+            </div>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="function example gradient-37" data-transition="slide">
+        <h2 class="header">Advanced filter - Example</h2>
+        <div><a href="https://codepen.io/sosuke/pen/Pjoqqp" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="function math example-38" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>
+              Functions 
+              Math
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section id="function calc-39" data-transition="slide">
+        <h2 class="header">calc - Example</h2>
+        <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" target="_blank"><img src="img/mdn.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="function min-40" data-transition="slide">
+        <h2 class="header">min - Example</h2>
+        <div><a href="https://codepen.io/una/pen/rNeGNVL" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="function clamp-41" data-transition="slide">
+        <h2 class="header">clamp - Example</h2>
+        <div><a href="https://codepen.io/una/pen/bGpoGdJ" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="path example-42" data-transition="slide">
+        <h2 class="header">path - Example</h2>
+        <div><a href="https://codepen.io/chriscoyier/pen/NRwrNp" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="selectors-title-43" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>Selectors</h1>
+          </div>
+        </div>
+      </section>
+      <section id="selectors-title-44" data-transition="none">
+        <h2 class="header">syntax</h2>
+        <div>
+          <pre><code css data-trim>p, div {
+  background: red;
+  color: blue
+}
+&nbsp;
+.warn {
+  font-style: italic
+}
+&nbsp;
+#title {
+  font-weight: bold
+}
+&nbsp;
+/* Css comment */</code></pre>
+        </div>
+      </section>
+      <section id="css-prio-45" data-transition="slide">
+        <h2 class="header">Selectors prio</h2>
+        <div>
+          <ul class="flex no-bullet">
+            <li class="fragment"> <img src="img/css-prio.png" alt="css prio logo" style="max-height: 500px;max-width: 5   00px;">
+              <p class="disclaimer"><a href="https://stackoverflow.com/a/54885587/13762066" target="_blank"></a> https://stackoverflow.com/a/54885587/13762066</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="selectors-next level-46" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">selectors</h2>
+          <div class="content">
+            <ul>
+              <li class="fragment">
+                 >, +, ~, *</li>
+              <li class="fragment">
+                 [attr]</li>
+              <li class="fragment">
+                 :empty, :not</li>
+              <li class="fragment">
+                 :has </li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="function example -47" data-transition="slide">
+        <h2 class="header">+, ~ , ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt</code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 2-48" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div+div{
+ background-color: red;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment plus" style="font-size:20px; margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 3-49" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"t&gt box5&lt/div&gt
+    &lt/div&gt</code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text  </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 4-50" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">div+div{
+ background-color: red;
+}</code></pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment plus" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text  </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 5-51" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">div~div{
+ background-color: yellow;
+}</code></pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt   </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment sib" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text  </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 54-52" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">.example-container  p{
+ color: orange;
+}</code></pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt   </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment non-direct" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text  </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 55-53" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">.example-container > p{
+ color: brown;
+}</code></pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt   </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment direct" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text  </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 6-54" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div[data-important]{
+ background-color: green;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment attr" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 7-55" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div[class="bad-news"]{
+ background-color: blue;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment attr-value" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 8-56" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div[class=*"news"]{
+  background-color: blueviolet;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt                </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment attr-value-star" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 9-57" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div[class=^"news"]{
+  background-color: greenyellow;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment attr-value-home" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 9-2-58" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div[class=$"news"]{
+  background-color: olive;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment attr-value-end" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 10-59" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>:empty{
+ display: none;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt    </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment empty" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 10-2-60" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>:empty{
+ display: none;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt &lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt    </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment empty" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div> </div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 11-61" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>:not(.news){
+ background-color: aqua;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment not" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 11-2-62" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div:not(.news){
+ background-color: darkolivegreen;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment not2" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 11-2-63" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div:not(div[class*="news"]){
+ background-color: sienna;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment not3" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 12-64" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div:has(p){
+ background-color: coral;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment has" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="has-65" data-transition="slide">
+        <h2 class="header">more :has- Example</h2>
+        <div><a href="https://codepen.io/kevinpowell/pen/jOxrjvW" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="pseudo-selectors-66" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">pseudo selectors</h2>
+          <div class="content">
+            <ul>
+              <li class="fragment">
+                 :hover, :active</li>
+              <li class="fragment">
+                 :nth-child, first-child, last-of-type</li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="function example 20-67" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div:first-child, div:last-child{
+ background-color: deeppink;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment first-child" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 21-68" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>p:first-child{
+ background-color: tomato;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment first-child-p" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 22-69" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>p:last-of-type{
+ background-color: rebeccapurple;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment last-of-type" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 23-70" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>p:last-child{
+ background-color: rebeccapurple;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment last-child2" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 24-71" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div:nth-child(3){
+ background-color: palegoldenrod;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment child-1" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 25-72" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>*:nth-child(3){
+ background-color: goldenrod;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment child-2" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 26-73" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>*:nth-child(2n){
+ background-color: chocolate;
+}
+*:nth-child(2n +1){
+ background-color: forestgreen;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment child-3" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="function example 27-74" data-transition="slide">
+        <h2 class="header">+, ~, ... Example</h2>
+        <div>
+          <div class="flex" style="height:100%">
+            <h7>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;"></code>div:nth-child(even){
+ background-color: slateblue;
+}
+div:nth-child(odd){
+ background-color: firebrick;
+}</pre>
+              <pre style="width:100%"><code data-trim data-noescape style="max-width:1000px; max-height:800px;">    &ltdiv class="example-container"&gt
+      &ltdiv class="newsletter" data-important&gt box1&lt/div&gt
+      &ltdiv&gtbox2
+        &ltp&gttext&lt/p&gt
+      &lt/div&gt
+      &ltp&gttext&lt/p&gt
+      &ltdiv class="news"&gt box3&lt/div&gt
+      &ltdiv&gt&lt/div&gt
+      &ltdiv class="bad-news"&gt box5&lt/div&gt
+    &lt/div&gt  </code></pre>
+            </h7>
+          </div>
+          <div class="div example-container fragment child-4" style="font-size:20px;margin-left:115px">
+            <div class="newsletter" data-important>box1</div>
+            <div>box2
+              <p>text</p>
+            </div>
+            <p>text    </p>
+            <div class="news">box3</div>
+            <div></div>
+            <div class="bad-news" data-very-important>box5</div>
+          </div>
+        </div>
+      </section>
+      <section id="pseudo-elements-75" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">pseudo elements</h2>
+          <div class="content">
+            <ul>
+              <li class="fragment">
+                 ::before, ::after</li>
+              <li class="fragment">
+                 ::firstLetter, ::firstLine</li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="before-76" data-transition="slide">
+        <h2 class="header">::before and ::after- Example</h2>
+        <div><a href="https://codepen.io/kevinpowell/pen/rJYVPM" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="firstline-77" data-transition="slide">
+        <h2 class="header">::firstLine, ::firstLetter Examples</h2>
+        <div><a href="https://codepen.io/kamyk/pen/bGKMYrP" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="media-queries-78" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>Media Queries</h1>
+          </div>
+        </div>
+      </section>
+      <section id="media queries-79" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">media queries </h2>
+          <div class="content">
+            <ul>
+              <li class="fragment">
+                 mobile view</li>
+              <li class="fragment">
+                 printing</li>
+              <li class="fragment strong">
+                 dark mode</li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="has-80" data-transition="slide">
+        <h2 class="header">dark mode: Example</h2>
+        <div><a href="https://codepen.io/kamyk/pen/JjZvOqZ?editors=1100" target="_blank"><img src="img/codepen.png" alt="" style="max-height: 800px;max-width: 800px;"></a></div>
+      </section>
+      <section id="colors-81" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>Colors</h1>
+          </div>
+        </div>
+      </section>
+      <section id="colors-82" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Colors   </h2>
+          <div class="content">
+            <ul>
+              <li class="fragment">name <span style="color:red">red</span></li>
+              <li class="fragment"> <span style="color:#e3e3e3">#e3e3e3</span></li>
+              <li class="fragment"> <span style="color:rgb(11, 240, 55)">rgb(11, 240, 55)     </span></li>
+              <li class="fragment strong"><span style="color:hsl(312 75% 35%)">hsl(312, 75%, 35%)  </span></li>
+              <li class="fragment">opacity   <br><span style="color:rgba(11, 240, 55, 0.5)">rgba(11, 240, 55, 0.5)</span><br><span style="color:hsla(312 75% 35% / 0.5)">hsla(312 75% 35% /0.5)    </span></li>
+              <li class="fragment"> <span style="color:hwb(183 75% 7%);  ">hwb(183 75% 7%); </span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="units-83" data-transition="slide">
+        <h2 class="header">Colors - Example</h2>
+        <div>
+          <div class="div example-container" style="translate: 200px 200px">
+            <div style="background-color:red; font-size:20px; display:flex;align-items: center;justify-content: center;">red</div>
+            <div style="background-color:Tomato;font-size:20px; display:flex;align-items: center;justify-content: center;">Tomato</div>
+            <div style="background-color:OrangeRed;font-size:20px; display:flex;align-items: center;justify-content: center;">OrangeRed</div>
+            <div style="background-color:Gray;font-size:20px; display:flex;align-items: center;justify-content: center;">Gray</div>
+            <div style="background-color:DarkGrey;font-size:20px; display:flex;align-items: center;justify-content: center;">DarkGrey</div>
+          </div>
+        </div>
+      </section>
+      <section id="units-84" data-transition="slide">
+        <h2 class="header">Colors - Example</h2>
+        <div>
+          <div class="div example-container" style="translate: 300px 100px">
+            <div style="background-color:#9D1681; font-size:20px; display:flex;align-items: center;justify-content: center;width:200px">#9D1681</div>
+            <div style="background-color:#CE8BC0;font-size:20px; display:flex;align-items: center;justify-content: center;width:200px">#CE8BC0</div>
+            <div style="background-color:#E7C5E0;font-size:20px; display:flex;align-items: center;justify-content: center;width:200px">#E7C5E0</div>
+          </div>
+          <div class="div example-container" style="margin-top:10px;translate: 300px 100px">
+            <div style="background-color:rgb(156, 23, 129); font-size:20px; display:flex;align-items: center;justify-content: center;width:200px">rgb(156, 23, 129);</div>
+            <div style="background-color:rgb(206, 139, 192);font-size:20px; display:flex;align-items: center;justify-content: center;width:200px">rgb(206, 139, 192);</div>
+            <div style="background-color:rgb(231, 197, 224);font-size:20px; display:flex;align-items: center;justify-content: center;width:200px"> rgb(231, 197, 224);</div>
+          </div>
+          <div class="div example-container fragment" style="margin-top:10px;translate: 300px 100px">
+            <div style="background-color:hsl(312, 74%, 35%);; font-size:15px; display:flex;align-items: center;justify-content: center;width:200px">hsl(312, 74%, 35%);</div>
+            <div style="background-color:hsl(313, 41%, 68%);;font-size:15px; display:flex;align-items: center;justify-content: center;width:200px">hsl(313, 41%, 68%);</div>
+            <div style="background-color:hsl(312, 44%, 84%);;font-size:15px; display:flex;align-items: center;justify-content: center;width:200px">hsl(312, 44%, 84%);</div>
+          </div>
+          <div class="div example-container fragment" style="margin-top:10px;translate: 300px 100px">
+            <div style="background-color:hwb(312 9% 39%); font-size:15px; display:flex;align-items: center;justify-content: center;width:200px">hwb(312 9% 39%);</div>
+            <div style="background-color:hwb(313 55% 19%);font-size:15px; display:flex;align-items: center;justify-content: center;width:200px"> hwb(313 55% 19%);</div>
+            <div style="background-color:hwb(312 77% 9%);font-size:15px; display:flex;align-items: center;justify-content: center;width:200px"> hwb(312 77% 9%);</div>
+          </div>
+        </div>
+      </section>
+      <section id="units-85" data-transition="slide">
+        <h2 class="header"></h2>
+        <div>
+          <div class="section-title">
+            <h1>Units</h1>
+          </div>
+        </div>
+      </section>
+      <section id="units-86" data-transition="slide">
+        <div class="side-left">
+          <h2 class="header">Units   </h2>
+          <div class="content">
+            <ul>
+              <li class="fragment hideme">px</li>
+              <li class="fragment" style="text-decoration: line-through;">px</li>
+              <li class="fragment hideme">%</li>
+              <li class="fragment" style="text-decoration: line-through;">%</li>
+              <li class="fragment hideme">pt </li>
+              <li class="fragment" style="text-decoration: line-through;">pt </li>
+              <li class="fragment hideme">cm, in, mm</li>
+              <li class="fragment" style="text-decoration: line-through;">cm, in, mm         </li>
+              <li class="fragment strong">em, rem</li>
+              <li class="fragment strong">vh, vw</li>
+              <li class="fragment strong">ch   </li>
+              <li class="fragment">...       </li>
+            </ul>
+          </div>
+        </div>
+        <div class="decoration"> 
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+      <section id="summary-87" data-transition="slide">
+        <h2 class="header"></h2>
+        <div><img src="img/summary.png" style="border:0">
+          <ul>           
+            <li>If you have CSS problem let me know, I'll try to help </li>
+            <li>If you have 1hour for CSS weekly subscribe <a href="https://www.youtube.com/kepowob" _target="blank">Kevin Powels </a>youtube channel</li>
+          </ul>
+        </div>
+      </section>
+      <section id="theend-88" data-transition="slide">
+        <h2 class="header"></h2>
+        <div><img src="img/theend.png" style="border:0;translate: 0px 75px"></div>
+      </section>
+    </div>
+  </div>
+  <div class="frame space"><img src="img/iteratec.png" alt="">
+    <h3>
+       Variables, functions and more are waiting for you in your CSS stylesheet  -  Paweł Kamiński</h3>
+    <h3>_BUILD’22</h3>
+  </div>
+  <script src="reveal/reveal.js"></script>
+  <script>
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        
+    }
+    
+     const backgroundColors = ['magenta','yellow','mint', 'white']
+    
+      
+  </script>
+  <script>
+    Reveal.initialize({
+         controls: false,
+        // progress: true,
+        history: true,
+        center: false,
+        // center: true,
+        // rollingLinks: true,
+        // transition: "convex",
+        // width: "90%",
+        // height: 1.0,
+        dependencies: [            ],
+         plugins: [ RevealHighlight ]
+    });
+    
+  </script>
+  <script>
+    Reveal.on('slidechanged', () => {
+    
+    const decoration =  backgroundColors;
+    shuffleArray(decoration)
+    const sliced = decoration.slice(0,4)
+    //sliced.push('white','white','white','white')
+    shuffleArray(sliced);
+    
+    
+     document.querySelectorAll('.present .decoration .box').forEach(
+        e=> {                
+            e.classList.remove(...backgroundColors);
+            e.classList.add(sliced.pop()) 
+        }
+     )
+    
+    const random =   Math.floor(Math.random() * 3) 
+    document.querySelector('.present .decoration').style.left='';
+    document.querySelector('.present .decoration').style.bottom='';
+    document.querySelector('.present .decoration').style.right='';
+    document.querySelector('.present .decoration').style.top='';
+    switch(random){
+        case 0: { 
+             document.querySelector('.present .decoration').style.left='3vw';
+             document.querySelector('.present .decoration').style.bottom='3vh';
+             return;
+            }
+    
+        case 1: { 
+             document.querySelector('.present .decoration').style.right='3vw';
+             document.querySelector('.present .decoration').style.bottom='3vh';
+             return;
+            }
+        case 2: { 
+             document.querySelector('.present .decoration').style.right='3vw';
+             document.querySelector('.present .decoration').style.top='3vh';
+             return;
+            }
+    }
+    });
+  </script>
+</body>

@@ -1,0 +1,39 @@
+{
+  "name": "presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "reload": "node node_modules/reload/bin/reload -b -p 4200",
+    "compile": "node node_modules/pug-cli/index -P index.pug",
+    "pug": "npm run compile",
+    "watch": "npm-watch pug",
+    "work": "run-p watch  reload"
+  },
+  "watch": {
+    "pug": {
+      "patterns": [
+        "slides",
+        "."
+      ],
+      "extensions": "pug",
+      "quiet": false
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kamyk_pl/presentation.git"
+  },
+  "author": "Paweł Kamiński",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/kamyk_pl/presentation#readme",
+  "devDependencies": {
+    "npm-watch": "^0.9.0",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "reveal.js": "^4.1.0",
+    "reload": "^3.1.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {}
+}

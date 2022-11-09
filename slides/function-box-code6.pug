@@ -1,0 +1,22 @@
+extends layout/layout-side-left.pug 
+
+block vars
+  - var title = 'functions-code2'
+
+block title     
+        | Function - Example
+
+block content
+        div.flex(style="height:100%")
+          h7
+            pre(style="width:100%")
+              code(data-trim data-noescape style="max-width:1000px; max-height:800px;")
+                 |     &ltdiv class="example-container"&gt
+                 |       &ltdiv&gt id="it"&gt&lt/div&gt
+                 |       &ltdiv&gt id="er"&gt&lt/div&gt
+                 |       &ltdiv&gt id="at" class="creepy" &gt&lt/div&gt
+                 |       &ltdiv&gt id="ec" class="invert" &gt&lt/div&gt
+                 |     &lt/div&gt
+          
+
+       

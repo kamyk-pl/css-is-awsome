@@ -1,0 +1,15 @@
+ul.no-bullet {
+    list-styūe-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.no-bullet li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.biggest{
+    font-size: var(--font-size-700);
+}
