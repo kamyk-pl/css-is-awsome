@@ -1,0 +1,32 @@
+extends layout/layout-title.pug
+
+block vars
+  - var title = 'title'
+  - var transition= "none slide"
+
+block content
+        .flex(style="position: relative;")        
+           h2.moved-title 
+             | Variables 
+             br
+             | functions
+             br
+             | and more 
+             br
+             | are 
+             br
+             | waiting for
+             br
+             | you in your
+             br
+             | CSS
+             br
+             | stylesheet   
+           .fragment(style="display: flex; align-items: center;")              
+               | a.k.a
+               img.fragment(src="img/css-is-awesome.png")            
+        
+        p.fragment.disclaimer(style="margin-top:175px") 
+                |       _BUILD’22'
+                br
+                |       Paweł Kamiński

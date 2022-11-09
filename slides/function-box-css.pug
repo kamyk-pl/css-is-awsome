@@ -1,0 +1,40 @@
+extends layout/layout-side-left.pug 
+
+block vars
+  - var title = 'functions-css'
+
+block title
+        
+        | Function - Example
+
+
+block content
+        div.flex(style="height:100%")
+          h7
+            pre(style="width:100%")
+              code(data-trim data-noescape style="max-width:1000px; max-height:800px;")
+                |   .example-container{
+                |     display: flex;
+                |     border: 1px solid black;
+                |     gap: 5px;
+                |   }
+                |   .example-container div{
+                |     width: 100px;
+                |     height: 100px;
+                |   }
+                |   #it{
+                |     background-image: url(/img/it.png);
+                |   }
+                |   #er{
+                |     background-image: url(/img/er.png);
+                |   }
+                |   #at{
+                |     background-image: url(/img/at.png);
+                |   }
+                |   #ec{
+                |     background-image: url(/img/ec.png);
+                |   }
+                |
+                        
+
+       

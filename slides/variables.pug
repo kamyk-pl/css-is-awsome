@@ -1,0 +1,34 @@
+extends layout/layout.pug 
+
+block vars
+  - var title = 'variables'
+
+block title
+        
+        | Variables
+
+block content
+        h7.fragment Syntax 
+          pre
+            code(data-trim data-noescape )
+               |
+               | element {
+               |   --main-bg-color: brown;
+               | }
+              
+        h7.fragment Global variables 
+          pre
+            code(data-trim data-noescape )
+               |
+               | :root {
+               |   --main-bg-color: brown;
+               | }
+        h7.fragment Usage
+           pre
+            code(data-trim data-noescape )
+               |
+               | h1 {
+               |   color: var(--main-bg-color);
+               | }
+ 
+       

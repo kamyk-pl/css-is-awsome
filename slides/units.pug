@@ -1,0 +1,23 @@
+extends layout/layout-side-left.pug 
+
+block vars
+  - var title = 'units'
+
+block title
+        | Units   
+
+block content
+      ul
+        li.fragment.hideme px
+        li.fragment(style="text-decoration: line-through;") px
+        li.fragment.hideme %
+        li.fragment(style="text-decoration: line-through;") %
+        li.fragment.hideme pt 
+        li.fragment(style="text-decoration: line-through;") pt 
+        li.fragment.hideme cm, in, mm
+        li.fragment(style="text-decoration: line-through;") cm, in, mm         
+        li.fragment.strong em, rem
+        li.fragment.strong vh, vw
+        li.fragment.strong ch   
+        li.fragment ...       
+       

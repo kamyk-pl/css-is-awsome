@@ -1,0 +1,23 @@
+extends layout/layout.pug
+
+block vars
+  -var id = 'syntax01'
+  -var transition= "slide none"
+ 
+
+block title
+        | syntax
+block content       
+        pre
+                code(css, data-trim)
+                        |&lt;selector1&gt;, &lt;selector2&gt; {
+                        |   &lt;property1&gt; : &lt;value1&gt;;
+                        |   &lt;property2&gt; : &lt;value2&gt;;
+                        |   &lt;property3&gt; : &lt;value3&gt;
+                        |}
+                        |&nbsp;
+                        |&lt;selector1&gt; {
+                        |   &lt;property4&gt; : &lt;value4&gt;
+                        |}
+                        |&nbsp;
+                        | /* Css comment */

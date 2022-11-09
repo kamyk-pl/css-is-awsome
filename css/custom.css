@@ -1,0 +1,90 @@
+h2.moved-title{
+  position: relative;
+  font-size: 1.1em;
+  top: 100px;
+  /* min-height: 680px; */
+
+}
+
+.move-title {
+  position: relative;
+  animation-name: moveleft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  min-height: 695px;
+  margin-top: 100px;
+}
+
+@keyframes moveleft {
+  from {
+    transform: translateX(0px);
+    font-size: 1.6em;
+    top: 0;
+    left: 0;
+  }
+  to {
+    transform: translateX(-315px);
+    font-size: 1.1em;
+    top: 100px;
+    /* left: -39px;*/
+  }
+}
+
+.move-css {
+  /* color: aliceblue; */
+  animation-name: moveup;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
+
+  top: -20px;
+  color: var(--cl-it-magenta);
+  font-size: 12rem;
+  font-weight: 900;
+}
+
+@keyframes moveup {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(-290px);
+  }
+}
+
+
+.love::before{
+    content: url("https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvMjhcLzEyOTZcL2RlMTNiY2I4MWZjNTQ2MDlmMzlmZGQ4YjJmZGQ4YTRiLTE1OTk3MjYzODEuc3ZnIn0:iteratec:E4y6c7nTJMY7Ozo5aJsPWPR2fZHE7973Z-m-Us6rgCI?width=20");
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+}
+.volonteer::before{
+  content: url("https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvYzBcLzEyODZcLzgyN2Y1ZTI2MGIxMWM4NmU1YmI3NjVkZjNiMTQ3MTRmLTE1OTk3MjU3NjEuc3ZnIn0:iteratec:M4HB1b0Peat80C6BYFR_Hd_JQ4CVvWI-zI5j1sS8m3o?width=20");
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+}
+.neutral::before{
+  content: url("https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvNmZcLzEzMDBcL2E0MWRlZjU5NDZiMzRhNWY5MDYwMjc5NGVmODRlNjY2LTE1OTk3MjY1NjIuc3ZnIn0:iteratec:GSEiBhmMbyKdL9-Ea5XqET1HvHGHRFxQ9OsgR015pm4?width=20");
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+}
+.avoid::before{
+  content: url("https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvM2ZcLzE4MDNcL2EzM2EyMzcyYTA0MDE5YzA0YmVjOGIzYzExZmE4OTk2LTE2MDE1NDczMzQuc3ZnIn0:iteratec:KgkzNNRDUfyWL6LqmIAcXeBdGwflBL34ujnlxJMP1zI?width=20");
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+}
+.hate::before{
+  content: url("https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiaXRlcmF0ZWNcL2FjY291bnRzXC9hYlwvNDAwMDczOFwvcHJvamVjdHNcLzhcL2Fzc2V0c1wvZGNcLzE4MDJcLzdjNzU1YjQ4ZmI2NzBkYzViYmQ4MDg1YTM0MDhlMTMyLTE2MDE1NDczMzQuc3ZnIn0:iteratec:PnEwRU7L6l8nMnscdfb0iAWKw8kyPSEaXf7kGOddKxI?width=20");
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+}
+
+
+ 

@@ -1,0 +1,25 @@
+extends layout/layout-side-left.pug 
+
+block vars
+  - var title = 'functions-css'
+
+block title
+        
+        | Function - Example
+
+
+block content
+        div.flex(style="height:100%")
+          h7
+            pre(style="width:100%")
+              code(data-trim data-noescape style="max-width:1000px; max-height:800px;translate: 0 -100px;")
+                |.invert{
+                | 
+                |}
+                |.creepy {
+                |  filter()
+                |  
+                |}
+            
+
+       

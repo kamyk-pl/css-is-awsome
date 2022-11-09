@@ -1,0 +1,31 @@
+extends layout/layout-side-left.pug 
+
+block vars
+  - var title = 'functions-css'
+
+block title
+        
+        | Function - Example
+
+
+block content
+        div.flex(style="height:100%")
+          h7
+            pre(style="width:100%")
+              code(data-trim data-noescape style="max-width:1000px; max-height:800px;")
+                | .rotate{
+                |   rotate: 45deg;
+                | }
+                | .scale{
+                |   scale: 0.5;
+                | }
+                | .translate{
+                |   translate: 100px 150px;
+                | }
+                | .skew{
+                |   transform: skew(30deg, 20deg)
+                | }
+                |
+                        
+
+       

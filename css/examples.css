@@ -1,0 +1,192 @@
+.example-container{
+  display: flex;
+  gap:5px;
+}
+
+.example-container div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 25px;
+}
+
+#it{
+  background-image: url(/img/it.png);
+}
+
+#er{
+  background-image: url(/img/er.png);
+}
+
+#at{
+  background-image: url(/img/at.png);
+}
+
+#ec{
+  background-image: url(/img/ec.png);
+}
+
+.rotate{
+  rotate: 45deg;
+}
+.scale{
+  scale: 0.5;
+}
+.translate{
+  translate: 100px 150px;
+}
+.skew{
+  transform: skew(30deg, 20deg)
+}
+
+
+.animation div{
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
+}
+
+.animation #it:hover{
+  animation-name: rotate;
+}
+
+@keyframes rotate {
+  0%   { rotate: 0deg; }
+  50%  { rotate: 90deg }
+  100% { rotate: 45deg }
+}
+
+.animation #er:hover{
+  animation-name: scale;
+}
+
+@keyframes scale {
+  0%   { scale: 1; }
+  50%  { scale: 2 }
+  100% { scale: 0.5 }
+}
+
+.animation #at:active{
+  animation-name: translate;
+}
+
+@keyframes translate {
+  0%   { translate: 0 0; }
+  50%  { translate: 0 150px }
+  100% { translate: 100px 150px }
+}
+
+.animation #ec:active{
+  animation-name: skew;
+}
+
+@keyframes skew {
+  0%   { transform: skew(0deg, 0deg ) }
+  50%   { transform: skew(30deg, 0deg ) }
+  100%   { transform: skew(30deg, 20deg ) }
+}
+
+.invert{
+  filter: invert();
+}
+
+.blur{
+  filter: blur(10px);
+}
+ 
+.greyscale{
+       filter: grayscale(100%);
+}
+.combo{
+       filter:  drop-shadow(16px 16px 20px blue) sepia(60%);
+}
+
+
+.plus div+div{
+  background-color: red;
+}
+
+.sib div~div{
+  background-color: yellow;
+}
+
+.attr div[data-important]{
+  background-color: green;
+}
+ 
+.attr-value div[class="bad-news"]{
+  background-color: blue;
+}
+
+.attr-value-star div[class*="news"]{
+  background-color: blueviolet;
+}
+.attr-value-home div[class^="news"]{
+  background-color: greenyellow
+}
+
+.attr-value-end div[class$="news"]{
+  background-color:olive
+}
+
+.empty :empty{
+  display: none;
+}
+
+.not :not(.news){
+  background-color: aqua;
+}
+.not2 div:not(.news){
+  background-color:darkolivegreen;
+}
+
+.not3 div:not(div[class*="news"]){
+  background-color: sienna;
+}
+
+.direct.example-container > p{
+  color:brown;
+}
+
+.non-direct.example-container p{
+  color: orange;
+}
+
+.has div:has(p){
+  background-color:coral;
+}
+
+.first-child div:first-child, .first-child div:last-child {
+  background-color: deeppink;
+}
+.first-child-p p:first-child{
+  background-color:tomato;
+}
+
+.last-of-type p:last-of-type{
+  background-color:rebeccapurple;
+}
+.last-child2 p:last-child{
+  background-color:fuchsia;
+}
+.child-1 div:nth-child(3){
+  background-color:palegoldenrod;
+}
+.child-2 *:nth-child(3){
+  background-color: goldenrod;
+}
+.child-3 *:nth-child(2n){
+  background-color:chocolate;
+}
+.child-3 *:nth-child(2n+1){
+  background-color:forestgreen;
+}
+.child-4 div:nth-child(odd){
+  background-color: slateblue;
+}
+.child-4 div:nth-child(even){
+  background-color:firebrick
+}

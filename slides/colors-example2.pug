@@ -1,0 +1,30 @@
+extends layout/layout.pug 
+
+block vars
+  - var title = 'units'
+
+block title
+        
+        | Colors - Example
+
+block content
+    .div.example-container(style="translate: 300px 100px")
+      div(style="background-color:#9D1681; font-size:20px; display:flex;align-items: center;justify-content: center;width:200px") #9D1681
+      div(style="background-color:#CE8BC0;font-size:20px; display:flex;align-items: center;justify-content: center;width:200px") #CE8BC0
+      div(style="background-color:#E7C5E0;font-size:20px; display:flex;align-items: center;justify-content: center;width:200px") #E7C5E0
+
+    .div.example-container(style="margin-top:10px;translate: 300px 100px")
+      div(style="background-color:rgb(156, 23, 129); font-size:20px; display:flex;align-items: center;justify-content: center;width:200px") rgb(156, 23, 129);
+      div(style="background-color:rgb(206, 139, 192);font-size:20px; display:flex;align-items: center;justify-content: center;width:200px") rgb(206, 139, 192);
+      div(style="background-color:rgb(231, 197, 224);font-size:20px; display:flex;align-items: center;justify-content: center;width:200px")  rgb(231, 197, 224);
+       
+    .div.example-container.fragment(style="margin-top:10px;translate: 300px 100px")
+      div(style="background-color:hsl(312, 74%, 35%);; font-size:15px; display:flex;align-items: center;justify-content: center;width:200px") hsl(312, 74%, 35%);
+      div(style="background-color:hsl(313, 41%, 68%);;font-size:15px; display:flex;align-items: center;justify-content: center;width:200px") hsl(313, 41%, 68%);
+      div(style="background-color:hsl(312, 44%, 84%);;font-size:15px; display:flex;align-items: center;justify-content: center;width:200px") hsl(312, 44%, 84%);
+
+    .div.example-container.fragment(style="margin-top:10px;translate: 300px 100px")
+      div(style="background-color:hwb(312 9% 39%); font-size:15px; display:flex;align-items: center;justify-content: center;width:200px") hwb(312 9% 39%);
+      div(style="background-color:hwb(313 55% 19%);font-size:15px; display:flex;align-items: center;justify-content: center;width:200px")  hwb(313 55% 19%);
+      div(style="background-color:hwb(312 77% 9%);font-size:15px; display:flex;align-items: center;justify-content: center;width:200px")  hwb(312 77% 9%);
+       

@@ -1,0 +1,206 @@
+doctype html
+html(lang="en")
+    head
+        title iteratec  _BUILD’22    
+        meta(charset='utf-8')
+        meta(name='author', content=' ')
+        meta(name='description', content=' AR  ')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+
+        link(href='reveal/reveal.css', rel='stylesheet')
+        link(href='reveal/white.css', rel='stylesheet')
+        link(href='css/base.css', rel='stylesheet')
+        link(href='css/reveal-adj.css', rel='stylesheet')
+        link(href='css/utils.css', rel='stylesheet')
+        link(href='css/custom.css', rel='stylesheet')
+        link(href='css/examples.css', rel='stylesheet')
+        <!-- Theme used for syntax highlighting of code -->
+        link(rel="stylesheet" href="css/atom-light.css" id="highlight-theme")
+        script(src="reveal/plugin/highlight/highlight.js")
+
+-var counter = 0
+body
+        
+    .reveal
+        .slides
+            include ./slides/title.pug
+            include ./slides/title-img.pug
+            include ./slides/agenda-no.pug
+            include ./slides/agenda-colors.pug
+            include ./slides/agenda-yes.pug
+            //- include ./slides/agenda-qr.pug
+            include ./slides/lets-meet.pug
+            include ./slides/programming-language.pug
+            include ./slides/programming-language2.pug
+            include ./slides/browser-wars.pug 
+            include ./slides/browser-peace.pug 
+            include ./slides/disclaimer.pug 
+            include ./slides/syntax.pug 
+            include ./slides/syntax2.pug 
+
+            include ./slides/variables-title.pug
+            include ./slides/variables.pug
+            include ./slides/variables-example.pug
+          
+            include ./slides/function-title.pug
+            include ./slides/function.pug
+            include ./slides/function2.pug
+            include ./slides/function-example.pug
+            include ./slides/function-box-code.pug
+            include ./slides/function-box-css.pug
+            include ./slides/function-box.pug
+            include ./slides/function-box-css2.pug
+            include ./slides/function-box-code2.pug
+            include ./slides/function-box2.pug
+            include ./slides/function-box-css3.pug
+            include ./slides/function-box-code3.pug
+            include ./slides/function-box3.pug
+            include ./slides/function-example4.pug
+            include ./slides/function-example-image.pug
+            include ./slides/function-example5.pug
+            include ./slides/function-box6start.pug
+            include ./slides/function-box6.pug
+            include ./slides/function-box7.pug
+            include ./slides/function-box8.pug
+            include ./slides/function-box9.pug
+            include ./slides/function-example10.pug
+            include ./slides/function-example-math.pug
+            include ./slides/function-example11.pug
+            include ./slides/function-example12.pug
+            include ./slides/function-example13.pug
+            include ./slides/function-example14.pug
+
+
+            include ./slides/selectors-title.pug
+            include ./slides/syntax2.pug 
+            include ./slides/selectors-prio.pug 
+            include ./slides/selectors-next-level.pug 
+            include ./slides/selectors-example.pug 
+            include ./slides/selectors-example2.pug 
+            include ./slides/selectors-example3.pug 
+            include ./slides/selectors-example4.pug 
+            include ./slides/selectors-example5.pug 
+            include ./slides/selectors-example54.pug 
+            include ./slides/selectors-example55.pug 
+            include ./slides/selectors-example6.pug 
+            include ./slides/selectors-example7.pug 
+            include ./slides/selectors-example8.pug 
+            include ./slides/selectors-example9.pug 
+            include ./slides/selectors-example9-2.pug 
+            include ./slides/selectors-example10.pug 
+            include ./slides/selectors-example10-2.pug 
+            include ./slides/selectors-example11.pug 
+            include ./slides/selectors-example11-2.pug 
+            include ./slides/selectors-example11-3.pug 
+            include ./slides/selectors-example12.pug 
+            include ./slides/selectors-example12example.pug 
+            include ./slides/selectors-pseudo-selector.pug 
+            include ./slides/selectors-example20.pug 
+            include ./slides/selectors-example21.pug 
+            include ./slides/selectors-example22.pug 
+            include ./slides/selectors-example23.pug 
+            include ./slides/selectors-example24.pug 
+            include ./slides/selectors-example25.pug 
+            include ./slides/selectors-example26.pug 
+            include ./slides/selectors-example27.pug 
+            include ./slides/selectors-pseudo-elements.pug 
+            include ./slides/selectors-example30.pug 
+            include ./slides/selectors-example31.pug 
+
+            include ./slides/mediaQueries-title.pug
+            include ./slides/mediaQueries.pug
+            include ./slides/mediaQueries-example.pug
+
+            include ./slides/colors-title.pug
+            include ./slides/colors.pug
+            include ./slides/colors-example.pug
+            include ./slides/colors-example2.pug
+            
+            include ./slides/units-title.pug
+            include ./slides/units.pug
+            //- include ./slides/units-example.pug
+            
+            
+            include ./slides/summary.pug
+            //- include ./slides/demo.pug
+            include ./slides/theend.pug
+ 
+    .frame.space
+        img(src="img/iteratec.png", alt="")
+        h3 
+             | Variables, functions and more are waiting for you in your CSS stylesheet  -  Paweł Kamiński
+        h3
+         | _BUILD’22
+    script(src='reveal/reveal.js')
+    script.   
+
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            
+        }
+
+         const backgroundColors = ['magenta','yellow','mint', 'white']
+
+          
+    script.
+        Reveal.initialize({
+             controls: false,
+            // progress: true,
+            history: true,
+            center: false,
+            // center: true,
+            // rollingLinks: true,
+            // transition: "convex",
+            // width: "90%",
+            // height: 1.0,
+            dependencies: [            ],
+             plugins: [ RevealHighlight ]
+        });
+
+    script.
+        Reveal.on('slidechanged', () => {
+
+        const decoration =  backgroundColors;
+        shuffleArray(decoration)
+        const sliced = decoration.slice(0,4)
+        //sliced.push('white','white','white','white')
+        shuffleArray(sliced);
+
+        
+         document.querySelectorAll('.present .decoration .box').forEach(
+            e=> {                
+                e.classList.remove(...backgroundColors);
+                e.classList.add(sliced.pop()) 
+            }
+         )
+
+        const random =   Math.floor(Math.random() * 3) 
+        document.querySelector('.present .decoration').style.left='';
+        document.querySelector('.present .decoration').style.bottom='';
+        document.querySelector('.present .decoration').style.right='';
+        document.querySelector('.present .decoration').style.top='';
+        switch(random){
+            case 0: { 
+                 document.querySelector('.present .decoration').style.left='3vw';
+                 document.querySelector('.present .decoration').style.bottom='3vh';
+                 return;
+                }
+
+            case 1: { 
+                 document.querySelector('.present .decoration').style.right='3vw';
+                 document.querySelector('.present .decoration').style.bottom='3vh';
+                 return;
+                }
+            case 2: { 
+                 document.querySelector('.present .decoration').style.right='3vw';
+                 document.querySelector('.present .decoration').style.top='3vh';
+                 return;
+                }
+        }
+        });
+
+      
